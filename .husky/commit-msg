@@ -1,0 +1,6 @@
+#!/bin/sh
+# TODO: They WILL FAIL in v10.0.0
+# . "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/common.sh"
+
+yarn commitlint --edit $1
